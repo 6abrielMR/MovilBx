@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SocialMediaMovilBox</string>
+    <string name="focus"> *</string>
+    <string name="filter">filter</string>
 </resources>

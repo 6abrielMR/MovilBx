@@ -4,28 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".View.Activity.Posts">
 
-    <FrameLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/posts_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="26dp"/>
+        android:layout_marginBottom="26dp"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        style="@style/Widget.MaterialComponents.BottomAppBar"/>
+        android:layout_gravity="bottom" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/posts_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_anchor="@id/bar"
+        android:onClick="removeAllPosts"
+        android:src="@drawable/v_delete"
         app:backgroundTint="@color/floating"
         app:borderWidth="0dp"
         app:fabSize="normal"
-        android:src="@drawable/v_add"/>
+        app:layout_anchor="@id/bar" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

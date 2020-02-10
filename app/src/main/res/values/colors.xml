@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="titles">#0066FF</color>
+    <color name="subtitles">#169B00</color>
     <color name="navbar">#0066FF</color>
     <color name="floating">#1CC700</color>
+    <color name="no_fav">#ccc</color>
+    <color name="fav">#FFBF00</color>
 </resources>
